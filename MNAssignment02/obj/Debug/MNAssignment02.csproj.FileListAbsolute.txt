@@ -1,0 +1,7 @@
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\obj\Debug\MNAssignment02.csprojAssemblyReference.cache
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\obj\Debug\MNAssignment02.csproj.CoreCompileInputs.cache
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\bin\Debug\MNAssignment02.exe.config
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\bin\Debug\MNAssignment02.exe
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\bin\Debug\MNAssignment02.pdb
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\obj\Debug\MNAssignment02.exe
+C:\Users\van1s\source\repos\MNAssignment02\Assignment02\MNAssignment02\obj\Debug\MNAssignment02.pdb

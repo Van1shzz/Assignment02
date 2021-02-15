@@ -16,7 +16,8 @@ namespace MNAssignment02
 
         public Rectangle()
         {
-
+            width = 1;
+            length = 1;
         }
         public Rectangle(int width, int length)
         {
@@ -46,6 +47,10 @@ namespace MNAssignment02
             int perimeter = width * 2 + length * 2;
             return perimeter;
         }
+        /// <summary>
+        /// calculates area then returns it
+        /// </summary>
+        /// <returns></returns>
         public int GetArea()
         {
             int area = width * length;
