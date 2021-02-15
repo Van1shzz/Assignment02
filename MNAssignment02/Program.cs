@@ -12,7 +12,9 @@ namespace MNAssignment02
         static void Main(string[] args)
         {
             Console.WriteLine("Please enter the length and width of the rectangle");
-            int width, length;
+            int width = 0;
+            int length=0;
+            int newInput=0;
             bool checkLength = false;
             bool checkWidth = false;
             Console.WriteLine("What is your LENGTH?");
@@ -26,19 +28,17 @@ namespace MNAssignment02
 
                     if (length <= 0)
                     {
-                        Console.WriteLine("Enter a positive integer");
-                        length = Int32.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter a positive integer");                       
                     }
                     else
                     {
-                        checkLength = true;
+                        checkLength = true;                      
                     }
 
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("Enter an integer");
-                    
                 }
             }
 
@@ -53,11 +53,11 @@ namespace MNAssignment02
                     if (width <= 0)
                     {
                         Console.WriteLine("Enter a positive integer");
-                        width = Int32.Parse(Console.ReadLine());
+                        
                     }
                     else
                     {
-                        checkLength = true;
+                        checkWidth = true;                        
                     }
 
                 }
@@ -66,10 +66,65 @@ namespace MNAssignment02
                     Console.WriteLine("Enter an integer");
 
                 }
+
+                Rectangle rectangle = new Rectangle(width, length);
+
+                Console.WriteLine("1.Get Rectangle Length\n2.Change Rectangle Length\n3.Get Rectangle Width\n4.Change Rectangle Width" +
+                                    "\n5.Get Rectangle Perimeter\n6.Get Rectangle Area\n7.Exit");
+
+
+
+                int input= Int32.Parse(Console.ReadLine());
+
+
+                while(input != 7)
+                {
+                    switch (input)
+                    {
+                        case 1:
+                            Console.WriteLine("The length of the rectanle is: " + rectangle.GetLength().ToString());
+                            input = Int32.Parse(Console.ReadLine());
+                            break;
+                        case 2:
+                            Console.WriteLine("enter a new LENGTH for the rectangle");
+                            newInput = Int32.Parse(Console.ReadLine());
+                            rectangle.SetLength(newInput);
+                            input = Int32.Parse(Console.ReadLine());
+                            break;
+                        case 3:
+                            Console.WriteLine("The width for the rectangle is: " + rectangle.GetWidth().ToString());
+                            input = Int32.Parse(Console.ReadLine());
+                            break;
+                        case 4:
+                            Console.WriteLine("enter a new WIDTH for the rectangle");
+                            newInput = Int32.Parse(Console.ReadLine());
+                            rectangle.SetWidth(newInput);
+                            input = Int32.Parse(Console.ReadLine());
+                            break;
+                        case 5:
+                            Console.WriteLine("The perimeter of your rectangle is: " + rectangle.GetPerimeter().ToString());
+                            input = Int32.Parse(Console.ReadLine());
+                            break;
+                        case 6:
+                            Console.WriteLine("The Area of your rectangle is: " + rectangle.GetArea().ToString());
+                            input = Int32.Parse(Console.ReadLine());
+                            
+                            break;
+                        case 7:
+                            Console.WriteLine("press any key to exit");
+                            input = Int32.Parse(Console.ReadLine());
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                
+
+
+
             }
-
-            
-
         }
     }
 }
+
