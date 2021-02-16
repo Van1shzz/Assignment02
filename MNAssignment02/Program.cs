@@ -118,10 +118,7 @@ namespace MNAssignment02
                             break;
                     }
                 }
-
-                
-
-
+ 
 
             }
         }
