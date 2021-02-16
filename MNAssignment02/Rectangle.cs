@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MNAssignment02
 {
-    class Rectangle
+    public class Rectangle
     {
         private int width;
         private int length;
@@ -36,7 +36,7 @@ namespace MNAssignment02
         }
         public int GetWidth()
         {
-            return this.width;
+            return width;
         }
         public int SetWidth(int width)
         {
