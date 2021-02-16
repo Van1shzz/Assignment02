@@ -14,6 +14,7 @@ namespace MNAssignment02
         public int Width { get => width; set => width = value; }
         public int Length { get => length; set => length = value; }
 
+        //constructors
         public Rectangle()
         {
             width = 1;
